@@ -1,0 +1,35 @@
+body 
+{
+	background: #f4f6f8;
+	margin: 0px;
+	width: 1000px;
+}
+h3
+{
+	font-size: 21px;
+	font-family: Calibri;
+	color: #34404b;
+}
+a
+{
+	margin: 60px;
+	font-size: 21px;
+	font-family: Calibri;
+	color: #ff5912;
+}
+hgroup
+{
+	width: 270px;
+	height: 369px;
+	text-align: center;
+	margin-right: 20px; 
+	padding: 20px;
+	background: #ffffff;
+	float: left;
+}
+h2
+{
+	width: 1000px;
+	height: 29px;
+	background: #f4f6f8;
+}
