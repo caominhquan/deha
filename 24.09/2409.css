@@ -70,6 +70,36 @@ a{
 .products .rows .item figcaption:hover{
 	color: red;
 }
+h5{
+	float:left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.products .rows .item:hover .show-hover .color{
+	float:left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.products .rows .item:hover .show-hover .function{
+	float: center;
+	width: 100%;
+	margin-bottom: 30px;
+}
+.products .rows .item:hover .show-hover .function .share{
+	float: left;
+	width: 70px;
+	padding: 2px;
+}
+.products .rows .item:hover .show-hover .function .cart{
+	float: left;
+	width: 70px;
+	padding: 2px;
+}
+.products .rows .item:hover .show-hover .function .like{
+	float: left;
+	width: 70px;
+	padding: 2px;
+}
 .products .rows .item .price{
 	font-size: 18px;
 	font-weight: 600;
