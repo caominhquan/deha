@@ -172,7 +172,7 @@ li{
 .checkbox input[type="checkbox"]:checked + label:before{
 	border:5px solid #ff5912;
 }
-.checkbrand{
+.checkbox{
 	float: left;
 	width: 100%;
 	margin-bottom: 20px;
@@ -191,10 +191,10 @@ li{
 	display: inline-block;
 	margin-right: 15px;
 }
-.checkbrand input[type="checkbrand"]:checked + label {
+.checkbrand input[type="checkbox"]:checked + label {
     color: #ff5912;
 }
-.checkbrand input[type="checkbrand"]:checked + label:before{
+.checkbrand input[type="checkbox"]:checked + label:before{
 	border:5px solid #ff5912;
 }
 
@@ -363,6 +363,118 @@ footer .container .menu2 ul li{
 	padding-top: 20px;
 }
 
+/*tu day la css bai 2*/
+
+.section1{
+	width: 100%;
+	float: left;
+	background: #fff;
+}
+.section1 .container{
+	background: #f4f6f8;
+
+}
+.leftc{
+	width: 400px;
+	float: left;
+}
+.leftc .bigimage{
+	text-align: center;
+}
+.smallimage{
+	float: left;
+	display: inline-block;
+	background: #fff;
+}
+.smallimage .small1 img{
+	padding-top: 10px;
+}
+.smallimage .small2 img{
+	padding-top: 10px;
+}
+.small1{
+	width: 100px;
+	height: 70px;
+	margin: 20px 0px 120px 35px;
+	background: #f4f6f8;
+	float: left;
+	text-align: center;
+}
+.small2{
+	width: 100px;
+	height: 70px;
+	margin: 20px 0px 120px 20px;
+	background: #f4f6f8;
+	float: left;
+	text-align: center;
+}
+
+
+.detail{
+	display: inline-block;
+	float:right;
+	width: 700px;
+	padding-left: 20px;
+}
+.detail .title{
+	font-size: 40px;
+	font-weight: 1000;
+	color: #ff5912;
+}
+.detail .subtitle{
+	font-size: 16px;
+	font-weight: 600;
+	color: #34404b;
+	padding-top: 20px;
+}
+.detail .description {
+	font-size: 14px;
+	font-weight: 400;
+	color: #34404b;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	line-height: 2;
+}
+.detail .choose {
+	font-size: 16px;
+	font-weight: 600;
+	color: #34404b;
+	padding-top: 20px;
+	
+}
+.detail .choose .size{
+	width: 340px;
+	float: left;
+	padding-bottom: 60px;
+}
+.detail .choose .quantity{
+	width: 340px;
+	float: right;
+	text-align: right;
+	padding-bottom: 60px;
+}
+.detail .order{
+	float: left;
+	width: 100%;
+}
+.detail .order .pri{
+	float: left;
+	font-size: 20px;
+	font-weight: 1000;
+	width: 340px;
+	padding-top: 20px;
+}
+.detail .order .button{
+	float: right;
+	text-align: right;
+}
+.detail .order .button .ordernow{
+	width: 135px;
+	height: 50px;
+	background: #ff5912;
+	border-radius: 30px;
+}
+.section2 .container .
 /* Standard syntax */
 
 /*?????????????????????????????????*/
