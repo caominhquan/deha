@@ -609,15 +609,23 @@ h5{
 
 /*tu day la page 3*/
 .section4{
-	background-image: url(../image/anhto.png);
-	background-size: cover;
+	position: relative;
 	width: 100%;
 	float: left;
 	height: 650px;
 }
+.section4 .photo{
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 100%;
+}
 .section4 .info{
 	float: right;
 	width: 100%;
+	position: absolute;
+	z-index: 1;
+	
 }
 .section4 .info .container .bl1{
 	width: 100px;
@@ -782,7 +790,7 @@ h5{
 }
 .sub3{
 	float: left;
-	width: 165px;
+	width: 200px;
 	font-size: 18px;
     font-weight: 600;
     line-height: 35px;
@@ -797,13 +805,12 @@ h5{
 }
 .sub5{
 	color: #ff5912;
-	float: right;
 }
 .sub7{
-	text-align: center;
+	padding-left: 30px;
 	padding-top: 10px;
 	line-height: 35px;
-	color: #ff5912;
+
 }
 
 

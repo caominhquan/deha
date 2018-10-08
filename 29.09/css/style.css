@@ -258,11 +258,6 @@ li{
 .products .rows .item figcaption:hover{
 	color: red;
 }
-h5{
-	float:left;
-	width: 100%;
-	margin-bottom: 30px;
-}
 .products .rows .item:hover .show-hover .color{
 	float:left;
 	width: 100%;
@@ -294,7 +289,7 @@ h5{
 .write{
 	width: 100%;
 	float: left;
-	margin-top: 100px;
+	margin-top: 120px;
 }
 .write .container{
 	background: #fff;
@@ -523,7 +518,7 @@ footer{
 	height: 270px;
 }
 .section2 .container .relatedproducts{
-	padding-top: 110px;
+	padding-top: 120px;
 	width: 100%;
 	float: left;
 	text-align: center;
@@ -547,21 +542,24 @@ footer{
 	background: #f4f6f8;
 }
 .section3 .container{
-	height: 370px;
+	height: 365px;
 }
 .section3 .container .row{
-	margin: 0px -20px;
+	margin: 0px -15px;
 }
 .section3 .container .row .item .sub{
 	width: 100%;
-	padding: 20px 0px;
+	padding-top: 30px;
 	background: #fff;
+	height: 335px;
 }
 .section3 .container .item{
 	float: left;
-	width: calc(100% / 4 - 40px);
+	width: calc(100% / 4 - 30px);
 	text-align: center;
-	padding: 20px;
+	padding: 0px 15px;
+	height: 365px;
+	position: relative;
 }
 
 .section3 .container .item figcaption{
@@ -574,6 +572,247 @@ footer{
 	font-weight: 600;
 	color: #ff5912;
 }
+.section3 .container .item .show-hover{
+	position: absolute;
+	opacity: 0;
+	top:30px;
+	left:20px;
+	width: calc(100% - 40px);
+	transition: all 1050ms ease-out;
+	-webkit-transition:all 1050ms ease-out;
+}
+.section3 .container .item:hover .show{
+	opacity: 0;
+}
+.section3 .container .item:hover .show-hover{
+	opacity: 1;
+}
+.section3 .container .item figcaption:hover{
+	color: red;
+}
+h5{
+	padding-top: 20px;
+	float:left;
+	width: 100%;
+}
+.section3 .container .item:hover .show-hover .color{
+	padding-top: 30px;
+	float:left;
+	width: 100%;
+}
+.section3 .container .item:hover .show-hover .function{
+	padding-top: 40px;
+	float:left;
+	width: 100%;
+}
+
+
+/*tu day la page 3*/
+.section4{
+	position: relative;
+	width: 100%;
+	float: left;
+	height: 650px;
+}
+.section4 .photo{
+	position: absolute;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 100%;
+}
+.section4 .info{
+	float: right;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	
+}
+.section4 .info .container .bl1{
+	width: 100px;
+	float: left;
+}
+.section4 .info .container .winterkit{
+	width: calc(100% - 100px);
+	float: right;
+	padding-top: 220px;
+}
+.section4 .info .container .winterkit .text1{
+	font-size: 40px;
+	font-weight: 1000;
+	color: #ff5912;
+}
+.section4 .info .container .winterkit .text2{
+	padding-top: 30px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #34404b;
+}
+.section4 .info .container .winterkit .text3{
+	font-size: 14px;
+	font-weight: 400;
+	color: #34404b;
+	padding-top: 15px;
+}
+.section4 .info .container .winterkit .text4{
+	padding-top: 60px;
+}
+.price1{
+	font-size: 16px;
+	font-weight: 600;
+	width: 100px;
+	float: left;
+}
+.price2{
+	width: calc(100% - 120px);
+	font-size: 16px;
+	font-weight: 600;
+	float: right;
+	color: #ff5912;
+}
+
+.section5{
+	background: #f4f6f8;
+	width: 100%;
+	height: 60px;
+	float: left;
+	text-align: center;
+	font-size: 35px;
+	font-weight: 1000;
+	padding-top: 80px;
+}
+.section5 .container{
+	background: #fff;
+	height: 60px;
+}
+.section5 .dot a{
+	width: 100%;
+	color: #ff5912;
+	height: 60px;
+}
+
+.section6{
+	width: 100%;
+	float: left;
+	padding-top: 120px;
+	height: 100px;
+	background: #f4f6f8; 
+}
+.section6 .container{
+	height: 100px;
+}
+.section6 .hotdeal{
+	width: 670px;
+	background: #fff;
+	float: left;
+	height: 100px;
+}
+.section6 .hotdeal .sale1{
+	float: left;
+	text-align: center;
+	width: 200px;
+	height: 100px;
+}
+.sale1 .s50{
+	padding-top: 10px;
+}
+.section6 .hotdeal .sale2{
+	float: left;
+	text-align: left;
+	width: 300px;
+}
+.sale2 .name2{
+	padding-top: 20px;
+	font-size: 18px;
+	font-weight: 1000;
+	color: #34404b;
+}
+.name3{
+	padding-top: 15px;
+}
+.sale3{
+	width: 170px;
+	height: 100px;
+	float: left;
+}
+.sale3 .cart1{
+	padding-top: 40px;
+}
+.sale3 .name4{
+	font-size: 24px;
+	font-weight: 1000;
+	padding-top: 40px;
+	color: #ff5912;
+}
+.adv{
+	width: 470px;
+	text-align: center;
+	float: right;
+	height: 100px;
+	background: #fff;
+}
+.adv .name5{
+	text-align: center;
+	color: #34404b;
+	padding-top: 30px;
+}
+.name5 .name7{
+	color: #ff5912;
+}
+.name8{
+	padding-top: 15px;
+	color: #f4f6f8;
+}
+
+.section7{
+	background: #f4f6f8;
+	width: 100%;
+	height: 160px;
+}
+.row1{
+	margin: 0px -15px;
+}
+.item1{
+	float: left;
+	width: calc(100% / 3 - 30px);
+	text-align: center;
+	padding: 0px 15px;
+	height: 160px;
+}
+.sub1{
+	width: 100%;
+	padding-top: 35px;
+	background: #fff;
+	height: 125px;
+}
+.sub2{
+	width: 159px;
+	float: left;
+}
+.sub3{
+	float: left;
+	width: 200px;
+	font-size: 18px;
+    font-weight: 600;
+    line-height: 35px;
+    text-align: left;
+}
+.sub6{
+	padding-top: 10px;
+}
+.sub4{
+	text-align: left;
+	padding-top: 10px;
+}
+.sub5{
+	color: #ff5912;
+}
+.sub7{
+	padding-left: 30px;
+	padding-top: 10px;
+	line-height: 35px;
+
+}
+
 
 /* Standard syntax */
 
