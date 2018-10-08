@@ -1,0 +1,21 @@
+var section7 = [
+			{
+				image: "image/bestsale.png",
+				name: "Reebok Track Jacket",
+				rate:"image/rate.png",
+				price: "100$",
+			},
+			{
+				image: "image/bestsale.png",
+				name: "Reebok Track Jacket",
+				rate:"image/rate.png",
+				price: "100$",
+			},
+			{
+				image: "image/bestsale.png",
+				name: "Reebok Track Jacket",
+				rate:"image/rate.png",
+				price: "100$",
+			},
+		]; 
+		

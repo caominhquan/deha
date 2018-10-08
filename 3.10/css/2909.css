@@ -2,7 +2,13 @@
 	margin:0;
 	padding: 0;
 }
-li{
+.check{
+	list-style: none;
+}
+.checkbox{
+	list-style: none;
+}
+.checkbrand{
 	list-style: none;
 }
 a{
@@ -172,7 +178,7 @@ li{
 .checkbox input[type="checkbox"]:checked + label:before{
 	border:5px solid #ff5912;
 }
-.checkbox{
+.checkbrand{
 	float: left;
 	width: 100%;
 	margin-bottom: 20px;
@@ -204,33 +210,30 @@ li{
 	padding-left: 20px;
 }
 .products .rows{
-	float:left;
+	margin: 0px -20px;
+}
+.products .rows .item .sub{
 	width: 100%;
-	margin-bottom: 30px;
+	padding: 20px 0px;
+	background: #fff;
 }
 .products .rows .item{
 	float: left;
-	width: 230px;
+	width: calc(100% / 3 - 40px);
 	text-align: center;
-	background: #fff;
-	padding: 20px 0px 20px 20px;
-	margin:0 15px; 
-}
-.products .rows .item:first-child{
-	margin-left:0;
-	/*fist-child chỉ phần tử đầu tiên trong nhóm thẻ item*/
-}
-.products .rows .item:last-child{
-	margin-right:0;
-	/*last-child chỉ phần tử cuối cùng*/
+	padding: 20px;
+	height: 370px;
+	position: relative;
 }
 .products .rows .item figcaption{
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 55px;
 }
-.products .rows .item{
-	position: relative;
+.products .rows .item .price{
+	font-size: 18px;
+	font-weight: 600;
+	color: #ff5912;
 }
 .products .rows .item .show{
 	opacity: 1;
@@ -271,11 +274,7 @@ h5{
 	margin-bottom: 30px;
 
 }
-.products .rows .item .price{
-	font-size: 18px;
-	font-weight: 600;
-	color: #ff5912;
-}
+
 
 .paginator{
 	width: 870px;
@@ -294,30 +293,56 @@ h5{
 
 .write{
 	width: 100%;
+	float: left;
+	margin-top: 100px;
+}
+.write .container{
+	background: #fff;
 }
 .write .container .text{
 	float: left;
-	width: 100%;
+	width: 600px;
 	background: #fff;
-	margin-top: 120px;
 }
 .newsletter{
 	float:left;
-	padding: 40px;
+	padding: 45px;
 	font-size: 22px;
 	font-weight: 1000;
 	color: #ff5912;
 }
 .join-us{
-	padding: 45px 20px;
+	padding: 50px 20px;
 	float: left;
 	font-style: italic;
+}
+.write .container{
+	height: 120px;
+}
+.write .container .type-email{
+	width: 470px;
+	float: right;
+	padding-top: 35px;
+	padding-right: 40px;
+}
+.write .container .type-email img{
+	padding-top: 15px;
+}
+.write .container .type-email span{
+	padding-top: 15px;
+	font-style: italic;
+}
+.write .container .type-email .join{
+	float: right;
+	width: 135px;
+	height: 50px;
+	background: #ff5912;
 }
 
 
 
 footer{
-	margin-top: 60px;
+	margin-top: 120px;
 	float: left;
 	width: 100%;
 	height: 180px;
@@ -336,16 +361,19 @@ footer{
 }
 .menu2{
 	float: left;
-	width: 600px;
+	width: 700px;
 	padding-top: 35px;
 }
-footer .container .menu2 ul{
+.container .menu2 ul{
 	float: left;
-	padding-left: 90px;
+	padding-left: 120px;
 	padding-right: 0px;
 }
-footer .container .menu2 ul li{
+.container .menu2 ul li{
 	padding-bottom: 10px;
+}
+.container .menu2 .ba{
+	padding-left: 40px;
 }
 .payment{
 	width: 180px;
@@ -363,16 +391,28 @@ footer .container .menu2 ul li{
 	padding-top: 20px;
 }
 
+
+
 /*tu day la css bai 2*/
+
+
+
+.page2{
+	background:#f4f6f8;
+	margin: 0px;
+	float: left;
+	width: 100%;
+	height: 180px;
+}
 
 .section1{
 	width: 100%;
+	padding-top: 90px;
 	float: left;
 	background: #fff;
 }
 .section1 .container{
 	background: #f4f6f8;
-
 }
 .leftc{
 	width: 400px;
@@ -409,7 +449,6 @@ footer .container .menu2 ul li{
 	text-align: center;
 }
 
-
 .detail{
 	display: inline-block;
 	float:right;
@@ -440,7 +479,6 @@ footer .container .menu2 ul li{
 	font-weight: 600;
 	color: #34404b;
 	padding-top: 20px;
-	
 }
 .detail .choose .size{
 	width: 340px;
@@ -474,7 +512,69 @@ footer .container .menu2 ul li{
 	background: #ff5912;
 	border-radius: 30px;
 }
-.section2 .container .
+
+
+.section2{
+	width: 100%;
+	float: left;
+	background: #f4f6f8;
+}
+.section2 .container{
+	height: 270px;
+}
+.section2 .container .relatedproducts{
+	padding-top: 110px;
+	width: 100%;
+	float: left;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 1000;
+}
+.section2 .container .relatedproducts .re{
+	color: #ff5912;
+}
+.section2 .container .loremipsum{
+	float: left;
+	width: 100%;
+	padding-top: 20px;
+	text-align: center;
+}
+
+
+.section3{
+	width: 100%;
+	float: left;
+	background: #f4f6f8;
+}
+.section3 .container{
+	height: 370px;
+}
+.section3 .container .row{
+	margin: 0px -20px;
+}
+.section3 .container .row .item .sub{
+	width: 100%;
+	padding: 20px 0px;
+	background: #fff;
+}
+.section3 .container .item{
+	float: left;
+	width: calc(100% / 4 - 40px);
+	text-align: center;
+	padding: 20px;
+}
+
+.section3 .container .item figcaption{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 55px;
+}
+.section3 .container .item .price{
+	font-size: 18px;
+	font-weight: 600;
+	color: #ff5912;
+}
+
 /* Standard syntax */
 
 /*?????????????????????????????????*/

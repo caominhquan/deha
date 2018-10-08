@@ -1,4 +1,4 @@
-var section3 = [
+var container = [
 			{
 				image: "image/coat1.jpg",
 				name: "Reebok Track Jacket 1",
@@ -10,7 +10,7 @@ var section3 = [
 				price: "120$",
 			},
 			{
-				image: "image/coat13.jpg",
+				image: "image/coat3.jpg",
 				name: "Reebok Track Jacket 3",
 				price: "100$",
 			},
