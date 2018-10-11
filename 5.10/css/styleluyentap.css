@@ -19,7 +19,6 @@ a{
 .section{
 	float: left;
 	width: 100%;
-	margin-top: 120px;
 }
 .container{
 	width: 1170px;
@@ -30,9 +29,10 @@ a{
 
 header{
 	background:#f4f6f8;
+	margin-bottom: 60px;
 	float: left;
 	width: 100%;
-	height: 180px;
+	height: 190px;
 }
 .section-top{
 	background: #fff;
@@ -97,9 +97,9 @@ body{
 }
 .block{
 	float: left;
-	width: calc(100% - 30px);
-	padding-left: 30px;
-	padding-top: 30px;
+	width: calc(100% - 40px);
+	padding-left: 20px;
+	padding-top: 20px;
 	background: #fff;
 	margin-bottom: 30px;
 }
@@ -207,21 +207,21 @@ li{
 .products{
 	float:right;
 	width: 870px;
-	padding-left: 15px;
+	padding-left: 20px;
 }
 .products .rows{
-	margin: 0px -15px;
+	margin: 0px -20px;
 }
 .products .rows .item .sub{
 	width: 100%;
-	padding: 30px 0px;
+	padding: 20px 0px;
 	background: #fff;
 }
 .products .rows .item{
 	float: left;
-	width: calc(100% / 3 - 30px);
+	width: calc(100% / 3 - 40px);
 	text-align: center;
-	padding: 0px 15px 15px 15px;
+	padding: 20px;
 	height: 370px;
 	position: relative;
 }
@@ -340,7 +340,7 @@ footer{
 	margin-top: 120px;
 	float: left;
 	width: 100%;
-	height: 250px;
+	height: 180px;
 	background: #fff;
 }
 .l-foot{
@@ -349,7 +349,7 @@ footer{
 	margin: 0;
 }
 .shopy{
-	padding-top: 90px;
+	padding-top:  60px;
 }
 .text-foot{
 	padding-top: 10px;
@@ -357,7 +357,7 @@ footer{
 .menu2{
 	float: left;
 	width: 700px;
-	padding-top: 70px;
+	padding-top: 35px;
 }
 .container .menu2 ul{
 	float: left;
@@ -379,7 +379,7 @@ footer{
 	font-size: 16px;
 	font-weight: 600;
 	color: #ff5912;
-	padding-top: 100px;
+	padding-top: 60px;
 }
 .payment .payment-image{
 	text-align: left;
@@ -392,18 +392,25 @@ footer{
 
 
 
+.page2{
+	background:#f4f6f8;
+	margin: 0px;
+	float: left;
+	width: 100%;
+	height: 180px;
+}
+
 .section1{
 	width: 100%;
-	padding-top: 100px;
+	padding-top: 90px;
 	float: left;
 	background: #fff;
-	height: 550px;
 }
 .section1 .container{
 	background: #f4f6f8;
 }
 .leftc{
-	width: 470px;
+	width: 400px;
 	float: left;
 }
 .leftc .bigimage{
@@ -411,25 +418,37 @@ footer{
 }
 .smallimage{
 	float: left;
+	display: inline-block;
 	background: #fff;
-	width: 330px;
-	padding: 70px 0px 0px 70px;
 }
-.smallsub{
-	margin: 0px -7px;
+.smallimage .small1 img{
+	padding-top: 10px;
 }
-.small{
-	width: calc(100% / 3 - 14px);
+.smallimage .small2 img{
+	padding-top: 10px;
+}
+.small1{
+	width: 100px;
+	height: 70px;
+	margin: 20px 0px 120px 35px;
+	background: #f4f6f8;
 	float: left;
 	text-align: center;
-	padding: 0px 7px 7px 7px;
-	height: 75px;
+}
+.small2{
+	width: 100px;
+	height: 70px;
+	margin: 20px 0px 120px 20px;
+	background: #f4f6f8;
+	float: left;
+	text-align: center;
 }
 
 .detail{
 	display: inline-block;
 	float:right;
-	width: calc(100% - 470px);
+	width: 700px;
+	padding-left: 20px;
 }
 .detail .title{
 	font-size: 40px;
@@ -440,41 +459,43 @@ footer{
 	font-size: 16px;
 	font-weight: 600;
 	color: #34404b;
-	padding-top: 30px;
+	padding-top: 20px;
 }
 .detail .description {
 	font-size: 14px;
 	font-weight: 400;
 	color: #34404b;
-	padding-top: 40px;
+	padding-top: 30px;
+	padding-bottom: 40px;
 	line-height: 2;
 }
 .detail .choose {
 	font-size: 16px;
 	font-weight: 600;
 	color: #34404b;
-	padding-top: 80px;
+	padding-top: 20px;
 }
 .detail .choose .size{
 	width: 340px;
 	float: left;
+	padding-bottom: 60px;
 }
 .detail .choose .quantity{
 	width: 340px;
 	float: right;
 	text-align: right;
+	padding-bottom: 60px;
 }
 .detail .order{
 	float: left;
 	width: 100%;
-	padding-top: 70px;
 }
 .detail .order .pri{
 	float: left;
 	font-size: 20px;
 	font-weight: 1000;
 	width: 340px;
-	padding-top: 10px;
+	padding-top: 20px;
 }
 .detail .order .button{
 	float: right;
@@ -531,6 +552,13 @@ footer{
 	padding-top: 30px;
 	background: #fff;
 	height: 335px;
+	overflow: hidden;
+}
+.section3 .item:hover .haha{
+	height: 90px;
+	width: auto;
+	transition: all 250ms ;
+	-webkit-transition: all 250ms ;
 }
 .section3 .container .item{
 	float: left;
@@ -539,6 +567,24 @@ footer{
 	padding: 0px 15px;
 	height: 365px;
 	position: relative;
+	transition: all 250ms ease-out;
+	-webkit-transition: all 250ms ease-out;
+}
+.item .sub .trochuot .color{
+	padding-top: 30px;
+	float:left;
+	
+	display: inline-block;
+}
+.item .sub .trochuot .function{
+	padding-top: 30px;
+	float:left;
+	width: 100%;
+}
+.section3 .item:hover .price-box{
+	opacity: 0;height: 0px;
+	transition: all 250ms ease-out;
+	-webkit-transition: all 250ms ease-out;
 }
 
 .section3 .container .item figcaption{
@@ -550,6 +596,9 @@ footer{
 	font-size: 18px;
 	font-weight: 600;
 	color: #ff5912;
+}
+.price-box{
+	margin-bottom: 30px;
 }
 .section3 .container .item .show-hover{
 	position: absolute;
@@ -590,23 +639,13 @@ h5{
 .section4{
 	background-image: url(../image/anhto.png);
 	background-size: cover;
-	position: relative;
 	width: 100%;
 	float: left;
 	height: 650px;
 }
-.section4 .photo{
-	position: absolute;
-	width: 100%;
-	margin: 0 auto;
-	max-width: 100%;
-}
 .section4 .info{
 	float: right;
 	width: 100%;
-	position: absolute;
-	z-index: 1;
-	
 }
 .section4 .info .container .bl1{
 	width: 100px;
@@ -771,7 +810,7 @@ h5{
 }
 .sub3{
 	float: left;
-	width: 200px;
+	width: 165px;
 	font-size: 18px;
     font-weight: 600;
     line-height: 35px;
@@ -786,12 +825,13 @@ h5{
 }
 .sub5{
 	color: #ff5912;
+	float: right;
 }
 .sub7{
-	padding-left: 30px;
+	text-align: center;
 	padding-top: 10px;
 	line-height: 35px;
-
+	color: #ff5912;
 }
 
 
