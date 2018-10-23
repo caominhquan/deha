@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Demo</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css"/>
+	
+</head>
+
+
+
+<body>
+	<header>
+		<div class="section-top">
+			<div class="container">
+				<div class="l-column">
+					<div class="mail">
+						<img src="image/mail.jpg"/>
+						<span>info@shopy.com</span>
+					</div>
+					<div class="phone">
+						<img src="image/phone.jpg">
+						<span>453 - 5553 - 996</span>
+					</div>
+				</div>	
+				<div class="right-column">
+					<a href="#"><img src="image/facebook.jpg"/></a>
+					<span>&ensp;</span>
+					<a href="#"><img src="image/twitter.jpg"/></a>
+					<span>&ensp;</span>
+					<a href="#"><img src="image/google.jpg"/></a>
+					<span>&ensp;</span>
+					<a href="#"><img src="image/insta.jpg"/></a>
+				</div>
+			</div>
+		</div>
+		<div class="section-bottom">
+			<div class="container">
+				<div class="logo">
+					<img src="image/logo.jpg"/>
+				</div>
+				<div class="menu">
+					<a href="#">Home</a>
+					<a href="#">Products</a>					
+					<a href="#">Hot Deals</a>				
+					<a href="#">About</a>					
+					<a href="#">Contact</a>
+				</div>
+				<div class="choose">
+					<a href="#"><img src="image/search.jpg"/></a>
+					<span>&emsp;</span>
+					<a href="#"><img src="image/user.jpg"/></a>
+					<span>&emsp;</span>
+					<a href="#"><img src="image/cartcount.png"/></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="section8">
+		<div class="container1">
+			<div class="r-image">
+				<img class="r-image" src="image/registerimage.png"/>
+			</div>
+			<form method="post" action="#" name="register" class="register" enctype="multipart/form-data">
+				<div class="r-info">
+					<label for="email">email</label>
+					<input type="email" name="email" class="email" placeholder="email">
+					<p style="display: none;color:red">Invalid </p>
+				</div>
+				<div class="r-info">
+					<label for="hovaten">Ho va ten</label>
+					<input type="text" name="hovaten" class="hovaten" placeholder="name">
+				</div>
+				<div class="r-info">
+					<label for="sodienthoai">So dien thoai</label>
+					<input type="number" name="sodienthoai" class="sodienthoai" placeholder="phonenumber">
+				</div>
+				<div class="r-info">
+					<label for="password">Mat khau</label>
+					<input type="password" name="password" min="6" class="password" placeholder="password">
+				</div>
+				<div class="r-info">
+					<label for="nhaplaimatkhau">Nhap lai mat khau</label>
+					<input type="password" name="nhaplaimatkhau" class="nhaplaimatkhau" placeholder="retypepassword">
+				</div>
+				<div class="r-info">
+					<label for="magioithieu">Ma gioi thieu</label>
+					<input type="text" name="magioithieu" class="magioithieu" placeholder="giftcode">
+				</div>
+			</form>
+			<div class="dongy">
+				
+				<input class="dieukien" type="radio" name="dieukien" id="dieukien">
+				<label for="dieukien">Dong y voi chinh sach bao mat <br> va dieu khoan su dung</label>
+				
+			</div>
+			<button type="submit" onclick="return checkForm()">ĐỒNG Ý</button>
+					
+		</div>
+	</section>
+	<script type="text/javascript">
+		function checkForm() {
+			// var email = document.getElementById("email").value;
+			// var password = document.getElementById("password").value;
+			var email = document.forms["register"].email.value;
+			var password = document.forms["register"].password.value;
+			if(email.length >0 && password.length >= 6){
+				return true;
+			}else{
+				if(email.length <=0){
+					document.forms["register"].email.nextElementSibling.style.display = "block";
+				}	
+				if(password.length < 6 && password.length > 0){
+					// document.forms["form_data"].password.nextElementSibling.innerText = "chưa đủ 6 ký tự";
+					// document.forms["form_data"].password.nextElementSibling.style.display = "block";
+					if(document.forms["register"].password.nextElementSibling){
+						document.forms["register"].password.nextElementSibling.remove();
+					}
+					var textInput = document.forms["register"].password.outerHTML;
+					textInput += '<p style="color:red">chưa đủ 6 ký tự </p>';
+					document.forms["register"].password.outerHTML = textInput;
+				}else{
+					// document.forms["form_data"].password.nextElementSibling.innerText = "chưa nhap password";
+					// document.forms["form_data"].password.nextElementSibling.style.display = "block";
+					if(document.forms["register"].password.nextElementSibling){
+						document.forms["register"].password.nextElementSibling.remove();
+					}
+					
+					var textInput = document.forms["register"].password.outerHTML;
+					textInput += '<p style="color:red">chưa nhap password</p>';
+					document.forms["register"].password.outerHTML = textInput;
+				}
+			}
+			
+			return false;
+			
+		}
+	</script>
+
+
+	<footer>
+		<div class="container">
+			<div class="l-foot">
+				<div class="shopy">
+					<a href="#"><img src="image/logo.jpg"></a>
+				</div>
+				<div class="text-foot">
+					<span>shopy c 2015.your copy right here</span>
+				</div>
+			</div>
+			<div class="menu2">
+				<ul>
+					<li><a href="#">about us</a></li>
+					<li><a href="#">contact us</a></li>
+					<li><a href="#">support</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">our feed</a></li>
+					<li><a href="#">terms and conditions</a></li>
+					<li><a href="#">our privacy</a></li>
+				</ul>
+				<ul class="ba">
+					<li><a href="#">join us</a></li>
+					<li><a href="#">live support</a></li>
+				</ul>
+			</div>
+			<div class="payment">
+				<div class="payment-methods">
+					<span>Payment Methods</span>
+				</div>
+				<div class="payment-image">
+					<img src="image/payment.jpg"/>
+				</div>
+	</footer>
+	
+</body>
+</html>
