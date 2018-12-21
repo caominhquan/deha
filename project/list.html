@@ -1,0 +1,399 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>list</title>
+	<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="vendor/bootstrap/bootstrap.css"/>
+	<link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+	<script type="text/javascript" src="js/list.js"></script>
+	<script type="text/javascript" src="vendor/jquery/jquery.js"></script>
+
+</head>
+<body>
+	<header></header>
+	<div class="section1">
+		<div class="container">
+			<div class="col-md-3 hidden-xs hidden-sm " id="a">
+				<div class="leftc" id="leftc">
+					<p class="leftc-title">Raw Foods Self</p>
+					<ul class="leftc-content">
+						<li class="category"><a href="B&C">Baking & Cooking</a></li>
+						<li class="category"><a href="Cereals">Cereals</a></li>
+						<li class="category"><a href="DF">Dried Fruit</a></li>
+						<li class="category"><a href="Honey">Honey</a></li>
+						<li class="category"><a href="J&S">Jams & Spreads</a></li>
+						<li class="category1"><a href="Butter">Butter</a></li>
+						<li class="category1"><a href="#">Chocolate Spread</a></li>
+						<li class="category1"><a href="#">Jams</a></li>
+						<li class="category1"><a href="#">Peanut Butter</a></li>
+						<li class="category"><a href="#">Noodles</a></li>
+						<li class="category"><a href="#">Nuts & Seeds</a></li>
+						<li class="category"><a href="#">Oils & Sauces</a></li>
+						<li class="category"><a href="#">Olives</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9 col-xs-12" id="b">
+				<div class="col-xs-12" id="b1">
+					<div class="address" id="address">
+				        <ul class="breadcrumb" id="breadcrumb">
+				            <li class="breadcrumb-item"><a href="#">Home</a></li>
+				            <li class="breadcrumb-item"><a href="#">Product Categories</a></li>
+				            <li class="breadcrumb-item active" aria-current="page">Baking & Cooking</li>
+				        </ul>
+					</div>
+				</div>
+				<div class="col-xs-12" id="b2">
+					<div class="col-xs-12 col-sm-6 " id="b2a">
+						<p>All Baking & Cooking</p>
+					</div>
+					<div class="col-sm-6 col-xs-12" id="b2b">
+						<div class="col-xs-4" id="b2ba">	
+							<a href="#" id="clicklist"><i class="fas fa-th" onclick="clicklist()"></i></a>
+							<span>&ensp;</span>
+							<a href="#" id="clickdetail"><i class="fas fa-list-ul" onclick="clickdetail()"></i></a>
+						</div>
+						<div class="col-xs-8" id="b2bb">
+							<div class="text-right">
+								<div class="sort">
+									<button id="sortbutton">&ensp;Sort by popularity&ensp;<i class="fas fa-sort"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12" id="list">
+					<div class="keogian">
+						<div class="col-sm-4 col-xs-6" id="listitem">
+							<div class="item">
+								<div class="item-content">
+									<div class="text-center">
+										<div id="image">
+											<img src="images/BC 1 small.png">
+										</div>
+										<div class="rating" id="rating">
+											<p>5 sao</p>
+										</div>
+										<figcaption id="fig">Clearspring Apple Sauce Organic</figcaption>
+										<div class="piece" id="piece">
+											<p>Clearspring 300g</p>
+										</div>
+										<figcaption id="fig1">$1.29</figcaption>
+										<div class="cart">
+											<button class="addtocart" id="1"><i class="fas fa-plus-circle"></i>&ensp;Add To Cart</button>
+											<button class="viewcart" id="v1"><i class="fas fa-check"></i>&ensp;View Cart</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4 col-xs-6" id="listitem">
+							<div class="item">
+								<div class="item-content">
+									<div class="text-center">
+										<img src="images/BC 2 small.png">
+										<div class="rating" id="rating">
+											<p>5 sao</p>
+										</div>
+										<figcaption id="fig">Clearspring Italian Basilico Pasta Sauce Organic</figcaption>
+										<div class="piece" id="piece">
+											<p>Clearspring 300g</p>
+										</div>
+										<figcaption id="fig1">$2.29</figcaption>
+										<button class="addtocart" id="2"><i class="fas fa-plus-circle"></i>&ensp;Add To Cart</button>
+										<button class="viewcart" id="v2"><i class="fas fa-check"></i>&ensp;View Cart</button>
+									</div>
+								</div>
+							</div>S
+						</div>
+						<div class="col-sm-4 col-xs-6" id="listitem">
+							<div class="item">
+								<div class="item-content">
+									<div class="text-center">
+										<img src="images/BC 3 small.png">
+										<div class="rating" id="rating">
+											<p>5 sao</p>
+										</div>
+										<figcaption id="fig">Kitchen Garden Preserves Cranberry Sauce</figcaption>
+										<div class="piece" id="piece">
+											<p>Clearspring 300g</p>
+										</div>
+										<figcaption id="fig1">$3.2</figcaption>
+										<button class="addtocart" id="3"><i class="fas fa-plus-circle"></i>&ensp;Add To Cart</button>
+										<button class="viewcart" id="v3"><i class="fas fa-check"></i>&ensp;View Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div  class="col-sm-4 col-xs-6" id="listitem">
+							<div class="item">
+								<div class="item-content">
+									<div class="text-center">
+										<div id="image">
+											<img src="images/BC 4 small.png">
+										</div>
+										<div class="rating" id="rating">
+											<p>5 sao</p>
+										</div>
+										<figcaption id="fig">Le Conserve Della Nonna Arrabbiata</figcaption>
+										<div class="piece" id="piece">
+											<p>Clearspring 300g</p>
+										</div>
+										<figcaption id="fig1">$2.69</figcaption>
+										<button class="addtocart" id="4"><i class="fas fa-plus-circle"></i>&ensp;Add To Cart</button>
+										<button class="viewcart" id="v4"><i class="fas fa-check"></i>&ensp;View Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div  class="col-sm-4 col-xs-6" id="listitem">
+							<div class="item">
+								<div class="item-content">
+									<div class="text-center">
+										<div id="image">
+											<img src="images/BC 5.png">
+										</div>
+										<div class="rating" id="rating">
+											<p>5 sao</p>
+										</div>
+										<figcaption id="fig">Meridian Thai Peanut Cooking Sauce</figcaption>
+										<div class="piece" id="piece">
+											<p>Clearspring 300g</p>
+										</div>
+										<figcaption id="fig1">$2.99</figcaption>
+										<button class="addtocart" id="5"><i class="fas fa-plus-circle"></i>&ensp;Add To Cart</button>
+										<button class="viewcart" id="v5"><i class="fas fa-check"></i>&ensp;View Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div  class="col-sm-4 col-xs-6" id="listitem">
+							<div class="item">
+								<div class="item-content">
+									<div class="text-center">
+										<div id="image">
+											<img src="images/BC 6 small.png">
+										</div>
+										<div class="rating" id="rating">
+											<p>5 sao</p>
+										</div>
+										<figcaption id="fig">Clearspring Apple Sauce Organic</figcaption>
+										<div class="piece" id="piece">
+											<p>Clearspring 300g</p>
+										</div>
+										<figcaption id="fig1" >$4.59</figcaption>
+										<button class="addtocart" id="6"><i class="fas fa-plus-circle"></i>&ensp;Add To Cart</button>
+										<button class="viewcart" id="v6"><i class="fas fa-check"></i>&ensp;View Cart</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div  class="col-sm-4 col-xs-6" id="listitem">
+							<div class="item">
+								<div class="item-content">
+									<div class="text-center">
+										<div id="image">
+											<img src="images/BC 7.png">
+										</div>
+										<div class="rating" id="rating">
+											<p>5 sao</p>
+										</div>
+										<figcaption id="fig">Clearspring Apple Sauce Organic</figcaption>
+										<div class="piece" id="piece">
+											<p>Clearspring 300g</p>
+										</div>
+										<figcaption id="fig1">$4.29</figcaption>
+										<button class="addtocart" id="7"><i class="fas fa-plus-circle"></i>&ensp;Add To Cart</button>
+										<button class="viewcart" id="v7"><i class="fas fa-check"></i>&ensp;View Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div  class="col-sm-4 col-xs-6" id="listitem">
+							<div class="item">
+								<div class="item-content">
+									<div class="text-center">
+										<div id="image">
+											<img src="images/BC 8 small.png">
+										</div>
+										<div class="rating" id="rating">
+											<p>5 sao</p>
+										</div>
+										<figcaption id="fig">Clearspring Apple Sauce Organic</figcaption>
+										<div class="piece" id="piece">
+											<p>Clearspring 300g</p>
+										</div>
+										<figcaption id="fig1">$2.85</figcaption>
+										<button class="addtocart" id="8"><i class="fas fa-plus-circle"></i>&ensp;Add To Cart</button>
+										<button class="viewcart" id="v8"><i class="fas fa-check"></i>&ensp;View Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div  class="col-sm-4 col-xs-6" id="listitem">
+							<div class="item">
+								<div class="item-content">
+									<div class="text-center">
+										<div id="image">
+											<img src="images/BC 9.png">
+										</div>
+										<div class="rating" id="rating">
+											<p>5 sao</p>
+										</div>
+										<figcaption id="fig">Clearspring Apple Sauce Organic</figcaption>
+										<div class="piece" id="piece">
+											<p>Clearspring 300g</p>
+										</div>
+										<figcaption id="fig1">$2.85</figcaption>
+										<button class="addtocart" id="9"><i class="fas fa-plus-circle"></i>&ensp;Add To Cart</button>
+										<button class="viewcart" id="v9"><i class="fas fa-check"></i>&ensp;View Cart</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12" id="detail">
+					<div class="keo">
+						<div class="col-xs-12" id="detailitem">
+							<div class="col-xs-3" >
+								<div class="text-center">
+									<img src="images/BC 1 small.png">
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="rating" id="rating">
+									<p>5 sao</p>
+								</div>
+								<figcaption id="fig2">Clearspring Apple Sauce Organic</figcaption>
+								<div class="piece" id="piece">
+									<p>Clearspring 300g</p>
+								</div>
+								<div class="des" id="des">Day la mot san pham rat phu hop voi nguoi an kieng do hoan toan khong chua chat beo</div>
+							</div>
+							<div class="col-xs-3">
+								<div class="text-center">
+									<div class="right">
+										<figcaption id="fig1">$1.29</figcaption>
+										<button class="addtocart1" id="11">&ensp;<i class="fas fa-plus-circle"></i>&ensp;Add To Cart&ensp;</button>
+										<button class="viewcart1" id="v11">&ensp;<i class="fas fa-check"></i>&ensp;View Cart&ensp;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12" id="detailitem">
+							<div class="col-xs-3" >
+								<div class="text-center">
+									<img src="images/BC 2 small.png">
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="rating" id="rating">
+									<p>5 sao</p>
+								</div>
+								<figcaption id="fig2">Clearspring Italian Basilico Pasta Sauce Organic</figcaption>
+								<div class="piece" id="piece">
+									<p>Clearspring 300g</p>
+								</div>
+								<div class="des" id="des">San pham nay duoc chiet xuat theo ki thuat thu cong tu nuoc Y</div>
+							</div>
+							<div class="col-xs-3">
+								<div class="text-center">
+									<div class="right">
+										<figcaption id="fig1">$2.29</figcaption>
+										<button class="addtocart1" id="12">&ensp;<i class="fas fa-plus-circle"></i>&ensp;Add To Cart&ensp;</button>
+										<button class="viewcart1" id="v12">&ensp;<i class="fas fa-check"></i>&ensp;View Cart&ensp;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12" id="detailitem">
+							<div class="col-xs-3" >
+								<div class="text-center">
+									<img src="images/BC 3 small.png">
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="rating" id="rating">
+									<p>5 sao</p>
+								</div>
+								<figcaption id="fig2">Kitchen Garden Preserves Cranberry Sauce</figcaption>
+								<div class="piece" id="piece">
+									<p>Clearspring 300g</p>
+								</div>
+								<div class="des" id="des">Sot Cranberry la san pham doc quyen phan phoi tai Viet Nam cua Star Organic</div>
+							</div>
+							<div class="col-xs-3">
+								<div class="text-center">
+									<div class="right">
+										<figcaption id="fig1">$2.29</figcaption>
+										<button class="addtocart1" id="13">&ensp;<i class="fas fa-plus-circle"></i>&ensp;Add To Cart&ensp;</button>
+										<button class="viewcart1" id="v13">&ensp;<i class="fas fa-check"></i>&ensp;View Cart&ensp;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+			  $("#clicklist").click(function(){
+			    $("#detail").hide(300);
+			    $("#list").show(300);
+			  });
+			});
+			$(document).ready(function(){
+			  $("#clickdetail").click(function(){
+			    $("#detail").show(300);
+			    $("#list").hide(300);
+			  });
+			});
+		</script>
+		<script type="text/javascript">
+			function clicklist(){
+				$("#clicklist").css({
+					opacity:function(){
+						return 1; 
+					}
+				})
+				$("#clickdetail").css({
+					opacity:function(){
+						return 0.5; 
+					}
+				})
+			}
+			function clickdetail(){
+				$("#clicklist").css({
+					opacity:function(){
+						return 0.5; 
+					}
+				})
+				$("#clickdetail").css({
+					opacity:function(){
+						return 1; 
+					}
+				})
+			}
+		</script>
+		<script type="text/javascript">
+			$(".addtocart").click(function(){
+				$(this).remove();
+				$("#v" + $(this).attr("id")).show();
+			});
+			$(".addtocart1").click(function(){
+				$(this).remove();
+				$("#v" + $(this).attr("id")).show();
+			});
+	
+		</script>
+
+	</div>
+	<footer></footer>
+</body>

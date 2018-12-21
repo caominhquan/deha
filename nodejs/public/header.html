@@ -1,0 +1,13 @@
+<div class="header1" ng-show="page==1">
+ <h3 class="text-center">Liên hệ</h3>
+<input type="text" class="form-control text-center" placeholder="Tìm kiếm" ng-model="search" />
+<p>Số của tôi: 0123456789</p>
+</div>
+<div class="header2" ng-show="page==2">
+	<a href="#!/" ng-click="changePage(1)">Back</a>
+	<a href="#!/edit/{{contact_id}}" class="pull-right" ng-click="changePage(3)">Edit</a>
+</div>
+<div class="header2" ng-show="page==3">
+	<a href="#!/detail/{{contact_id}}" ng-click="changePage(2)">Back</a>
+
+</div>
