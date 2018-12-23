@@ -13,7 +13,9 @@
 
 </head>
 <body>
-	<header></header>
+	<div class="sectionfader" onclick="closesort()">
+		<span></span>
+	</div>
 	<div class="section1">
 		<div class="container">
 			<div class="col-md-3 hidden-xs hidden-sm " id="a">
@@ -51,15 +53,25 @@
 						<p>All Baking & Cooking</p>
 					</div>
 					<div class="col-sm-6 col-xs-12" id="b2b">
-						<div class="col-xs-4" id="b2ba">	
+						<div class="col-sm-4 col-xs-6" id="b2ba">	
 							<a href="#" id="clicklist"><i class="fas fa-th" onclick="clicklist()"></i></a>
 							<span>&ensp;</span>
 							<a href="#" id="clickdetail"><i class="fas fa-list-ul" onclick="clickdetail()"></i></a>
 						</div>
-						<div class="col-xs-8" id="b2bb">
+						<div class="col-sm-8 col-xs-6" id="b2bb">
 							<div class="text-right">
-								<div class="sort">
-									<button id="sortbutton">&ensp;Sort by popularity&ensp;<i class="fas fa-sort"></i></button>
+								<div class="sort" onclick="opensort()">
+									<button id="sortbutton">Sort by popularity&ensp;<i class="fas fa-sort"></i></button>
+								</div>
+								<div class="sortslide">
+									<div class="text-left">
+										<ul class="sortmenu">
+											<li class="sm1">Sort by popularity</li>
+											<li class="sm1">Sort by latest</li>
+											<li class="sm1">Sort by price: low</li>
+											<li class="sm1">Sort by price: hight</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -82,10 +94,8 @@
 											<p>Clearspring 300g</p>
 										</div>
 										<figcaption id="fig1">$1.29</figcaption>
-										<div class="cart">
-											<button class="addtocart" id="1"><i class="fas fa-plus-circle"></i>&ensp;Add To Cart</button>
-											<button class="viewcart" id="v1"><i class="fas fa-check"></i>&ensp;View Cart</button>
-										</div>
+										<button class="addtocart" id="1"><i class="fas fa-plus-circle"></i>&ensp;Add To Cart</button>
+										<button class="viewcart" id="v1"><i class="fas fa-check"></i>&ensp;View Cart</button>								
 									</div>
 								</div>
 							</div>
@@ -180,7 +190,7 @@
 										<div class="rating" id="rating">
 											<p>5 sao</p>
 										</div>
-										<figcaption id="fig">Clearspring Apple Sauce Organic</figcaption>
+										<figcaption id="fig">Nature'Charm Coconut Butterscotch Sauce</figcaption>
 										<div class="piece" id="piece">
 											<p>Clearspring 300g</p>
 										</div>
@@ -337,6 +347,162 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-xs-12" id="detailitem">
+							<div class="col-xs-3" >
+								<div class="text-center">
+									<img src="images/BC 4 small.png">
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="rating" id="rating">
+									<p>5 sao</p>
+								</div>
+								<figcaption id="fig2">Le Conserve Della Nonna Arrabbiata</figcaption>
+								<div class="piece" id="piece">
+									<p>Clearspring 300g</p>
+								</div>
+								<div class="des" id="des">Sot tuyet hao danh cho bua com gia dinh</div>
+							</div>
+							<div class="col-xs-3">
+								<div class="text-center">
+									<div class="right">
+										<figcaption id="fig1">$2.69</figcaption>
+										<button class="addtocart1" id="14">&ensp;<i class="fas fa-plus-circle"></i>&ensp;Add To Cart&ensp;</button>
+										<button class="viewcart1" id="v14">&ensp;<i class="fas fa-check"></i>&ensp;View Cart&ensp;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12" id="detailitem">
+							<div class="col-xs-3" >
+								<div class="text-center">
+									<img src="images/BC 5.png">
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="rating" id="rating">
+									<p>5 sao</p>
+								</div>
+								<figcaption id="fig2">Meridian Thai Peanut Cooking Sauce</figcaption>
+								<div class="piece" id="piece">
+									<p>Clearspring 350g</p>
+								</div>
+								<div class="des" id="des">Sot truyen thong cua dat nuoc Thai Lan</div>
+							</div>
+							<div class="col-xs-3">
+								<div class="text-center">
+									<div class="right">
+										<figcaption id="fig1">$2.99</figcaption>
+										<button class="addtocart1" id="15">&ensp;<i class="fas fa-plus-circle"></i>&ensp;Add To Cart&ensp;</button>
+										<button class="viewcart1" id="v15">&ensp;<i class="fas fa-check"></i>&ensp;View Cart&ensp;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12" id="detailitem">
+							<div class="col-xs-3" >
+								<div class="text-center">
+									<img src="images/BC 6 small.png">
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="rating" id="rating">
+									<p>5 sao</p>
+								</div>
+								<figcaption id="fig2">Nature'Charm Coconut Butterscotch Sauce</figcaption>
+								<div class="piece" id="piece">
+									<p>Clearspring 350g</p>
+								</div>
+								<div class="des" id="des">Sot chiet xuat nguyen chat tu bo lac</div>
+							</div>
+							<div class="col-xs-3">
+								<div class="text-center">
+									<div class="right">
+										<figcaption id="fig1">$4.59</figcaption>
+										<button class="addtocart1" id="13">&ensp;<i class="fas fa-plus-circle"></i>&ensp;Add To Cart&ensp;</button>
+										<button class="viewcart1" id="v13">&ensp;<i class="fas fa-check"></i>&ensp;View Cart&ensp;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12" id="detailitem">
+							<div class="col-xs-3" >
+								<div class="text-center">
+									<img src="images/BC 7.png">
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="rating" id="rating">
+									<p>5 sao</p>
+								</div>
+								<figcaption id="fig2">Organic Apricot Fruit Spread</figcaption>
+								<div class="piece" id="piece">
+									<p>Clearspring 290g</p>
+								</div>
+								<div class="des" id="des">Sot Cranberry la san pham doc quyen phan phoi tai Viet Nam cua Star Organic</div>
+							</div>
+							<div class="col-xs-3">
+								<div class="text-center">
+									<div class="right">
+										<figcaption id="fig1">$3.29</figcaption>
+										<button class="addtocart1" id="17">&ensp;<i class="fas fa-plus-circle"></i>&ensp;Add To Cart&ensp;</button>
+										<button class="viewcart1" id="v17">&ensp;<i class="fas fa-check"></i>&ensp;View Cart&ensp;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12" id="detailitem">
+							<div class="col-xs-3" >
+								<div class="text-center">
+									<img src="images/BC 8 small.png">
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="rating" id="rating">
+									<p>5 sao</p>
+								</div>
+								<figcaption id="fig2">Organic Raw Cashew Nut Butter</figcaption>
+								<div class="piece" id="piece">
+									<p>Clearspring 170g</p>
+								</div>
+								<div class="des" id="des">Sot pham dang duoc huong chinh sach ho tro gia tu nha cung cap</div>
+							</div>
+							<div class="col-xs-3">
+								<div class="text-center">
+									<div class="right">
+										<figcaption id="fig1">$2.85</figcaption>
+										<button class="addtocart1" id="18">&ensp;<i class="fas fa-plus-circle"></i>&ensp;Add To Cart&ensp;</button>
+										<button class="viewcart1" id="v18">&ensp;<i class="fas fa-check"></i>&ensp;View Cart&ensp;</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12" id="detailitem">
+							<div class="col-xs-3" >
+								<div class="text-center">
+									<img src="images/BC 9.png">
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="rating" id="rating">
+									<p>5 sao</p>
+								</div>
+								<figcaption id="fig2">Organic Roasted Cashew Nut Butter</figcaption>
+								<div class="piece" id="piece">
+									<p>Clearspring 170g</p>
+								</div>
+								<div class="des" id="des">Sot pham dang duoc huong chinh sach ho tro gia tu nha cung cap</div>
+							</div>
+							<div class="col-xs-3">
+								<div class="text-center">
+									<div class="right">
+										<figcaption id="fig1">$2.85</figcaption>
+										<button class="addtocart1" id="19">&ensp;<i class="fas fa-plus-circle"></i>&ensp;Add To Cart&ensp;</button>
+										<button class="viewcart1" id="v19">&ensp;<i class="fas fa-check"></i>&ensp;View Cart&ensp;</button>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -393,7 +559,16 @@
 			});
 	
 		</script>
-
+		<script type="text/javascript">
+			function opensort() {
+				$(".sortslide").slideDown(500);
+				$(".sectionfader").show();
+				}
+			function closesort(){
+				$(".sortslide").hide(500);
+				$(".sectionfader").hide();
+			}
+		</script>
 	</div>
 	<footer></footer>
 </body>
