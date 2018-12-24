@@ -5,6 +5,17 @@ body{
 	font-family: 'Bree Serif', serif !important;
 	background: #fcfcfc !important;
 }
+.sectionfader{
+	position: fixed;
+	float: left;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: #000;
+	z-index: 9;
+	display: none;
+}
 .section1{
 	padding-top: 40px;
 }
@@ -60,8 +71,11 @@ a{
 	padding-left: 0px;
 	font-size: 24px;
 }
+#b2ba{
+	padding: 0;
+}
 #b2bb{
-	padding-right: 0px;
+	padding: 0px;
 	font-size: 18px;
 }
 #list{
@@ -81,21 +95,43 @@ a{
 .viewcart{
 	width: 100%;
 	height: 40px;
-	background-color: #73b043 !important;
+	background-color: #fff !important;
 	border-radius: 400px !important;
-	border: none;
+	border-color: #73b043 !important;
+	border: 1px solid;
+	color: #73b043 !important;
 	outline: none;
 	display: none;
 }
 #sortbutton{
 	background-color: #fff !important;
-	border-radius: 400px !important;
+	border-radius: 5px !important;
 	border: 1px solid;
 	height: 40px;
 	outline: none;
+	width: 100%;
 }
 .sort{
 	color: #73b06c;
+	position: relative;
+}
+.sortslide{
+	margin-top: 5px;
+	border: 1px solid #73b043;
+	border-radius: 5px;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+	background: #fff;
+	display: none;
+	color: #73b043 !important;
+}
+.sortmenu{
+	margin: 0;
+	padding-left: 35px;
+}
+.sm1{
+	padding: 5px 0;
 }
 .keogian{
 	background: #fff;
@@ -175,9 +211,11 @@ a{
 	outline: none;
 }
 .viewcart1{
-	background-color: #73b043 !important;
+	background-color: #fff !important;
 	border-radius: 400px !important;
 	border: 1px solid;
+	border-color: #73b043 !important;
+	color: #73b043 !important;
 	height: 40px;
 	outline: none;
 	display: none;
@@ -198,5 +236,10 @@ a{
 	}
 	#fig2{
 		height: 100px !important;
+	}
+}
+@media screen and (max-width: 400px){
+	#sortbutton{
+		height: 60px;
 	}
 }
