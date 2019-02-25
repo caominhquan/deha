@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Angular JS</title>
+	<script type="text/javascript" src="js/data.json"></script>
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/angular-animate.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="vendor/jquery/jquery.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body ng-app="appDemo">
+	<div class="viewcontainer" ng-controller="dataController">
+		<header class="col-xs-12" header-app></header>
+		<div class="content col-xs-12" ng-view></div>
+		<footer class="col-xs-12" footer-app></footer>
+	</div>
+</body>
+</html>

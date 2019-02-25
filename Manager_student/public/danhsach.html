@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>danhsachsinhvien</title>
+	
+	<script type="text/javascript" src="vendor/jquery/jquery.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap/bootstrap.css"/>
+	<script type="text/javascript" src="demo.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+        		$.ajax({url: "http://localhost:3003/list_students", success: function(result){
+        			renderHtml(result.data);
+            		//$("#div1").html(result);
+        			}
+        			
+        		});
+    		});
+
+    		
+     	});
+	</script>
+</head>
+<body >
+	
+		<header class="col-xs-12" >
+			<p>Bang danh sach sinh vien</p>
+		</header>
+		<div class="col-xs-12" >
+			<button>bam vao day</button>
+			<div class="container">
+				<p>Danh sach sinh vien lop so 1</p>
+				<div class="col-xs-2">
+					<p>id sinh vien</p>
+				</div>
+				<div class="col-xs-2">
+					<p>ten sinh vien</p>
+					
+				</div>
+				<div class="col-xs-2">
+					<p>ma so sinh vien</p>
+					
+				</div>
+				<div class="col-xs-2">
+					<p>ngay sinh</p>
+					
+				</div>
+				<div class="col-xs-2">
+					<p>ma so lop</p>
+					
+				</div>
+				<div class="col-xs-2">
+					<p>gioi tinh</p>
+					
+				</div>
+			</div>
+			<div class="container" id="div1">
+				
+			</div>
+		</div>
+		<footer class="col-xs-12" ></footer>
+	
+</body>
+</html>

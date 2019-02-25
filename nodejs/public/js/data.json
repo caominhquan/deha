@@ -1,0 +1,72 @@
+var contacts = [
+				{
+					name: "Tran Van A",
+					birthday: 1999,
+					phone: 123456,
+					address: "A1",
+					image:"images/1.png"
+				},
+				{
+					name: "Tran Van B",
+					birthday: 1998,
+					phone: 1234546,
+					address: "B2",
+					image:"images/2.png"
+				},
+				{
+					name: "Tran Van C",
+					birthday: 1997,
+					phone: 234567,
+					address: "C3",
+					image:"images/3.png"
+				},
+				{
+					name: "Tran Van D",
+					birthday: 1996,
+					phone: 345678,
+					address: "D4",
+					image:"images/4.png"
+				},
+				{
+					name: "Tran Van E",
+					birthday: 1995,
+					phone: 456789,
+					address: "E5",
+					image:"images/5.png"
+				},
+				{
+					name: "Tran Van HH",
+					birthday: 1999,
+					phone: 123456,
+					address: "A1",
+					image:"images/6.png"
+				},
+				{
+					name: "Tran Van BB",
+					birthday: 1998,
+					phone: 1234546,
+					address: "B2",
+					image:"images/1.png"
+				},
+				{
+					name: "Tran Van CC",
+					birthday: 1997,
+					phone: 234567,
+					address: "C3",
+					image:"images/2.png"
+				},
+				{
+					name: "Tran Van DD",
+					birthday: 1996,
+					phone: 345678,
+					address: "D4",
+					image:"images/3.png"
+				},
+				{
+					name: "Tran Van EE",
+					birthday: 1995,
+					phone: 456789,
+					address: "E5",
+					image:"images/4.png"
+				},
+			];
