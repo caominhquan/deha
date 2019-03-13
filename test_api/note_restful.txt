@@ -1,0 +1,12 @@
+_API: phuong thuc de cac ung dung lam viec va tuong tac voi nhau.
+_Restful API: API viet theo cau truc rest. Cau truc REST la cac quy tac thiet ke webservice dinh huong resource.
+_json api la du lieu tra ve tu response theo dinh dang json. json la du lieu kieu key:value.
+_Resource trong restful api: la mot doi tuong bao gom cac dac tinh nhu loai, data lien quan, quan he voi tai nguyen khac... cung voi cac phuong thuc de quan ly no.
+_Loi ich cua Restful API: de tuong tac vi cac webservice hien nay chu yeu dung cau truc rest; da dang ve du lieu tra ve (json, xml...); do tin cay, linh hoat, kha nang mo rong va phat trien cao
+
+_5 rang buoc restful:
+	+uniform interface: giao dien dong nhat, tuong tac voi resource (theo chuan URI) theo cac phuong thuc chung (post, get, put, delete).
+	+Client-server: hoat dong theo co che client-server, su dung request-response.
+	+Stateless: server se khong luu trang thai client, moi request la rieng re doc lap va phai dong goi day du du lieu can thiet theo yeu cau server.
+	+Cachable: du lieu request response co the duoc luu cache de tang toc do nhung lan response sau voi request tuong tu.
+	+Layered: server su dung cau truc phan lop, client chi lam viec truc tiep voi tang server tiep nhan request
